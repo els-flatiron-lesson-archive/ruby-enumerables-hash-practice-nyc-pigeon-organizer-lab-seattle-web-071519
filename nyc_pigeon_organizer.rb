@@ -4,7 +4,7 @@ def nyc_pigeon_organizer(data)
     data[attribute].keys.each do |key|
       data[attribute][key].each do |name|
         if name_hash[name]
-          name_hash[:attribute] = key
+          name_hash[name][:attribute] = key
         else 
           name_hash[name] = {attribute: key}
         end
