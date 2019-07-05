@@ -6,7 +6,10 @@ def nyc_pigeon_organizer(data)
         if name_hash[name]
           name_hash[name][:attribute] = key
         else 
-          name_hash[name] = {data[attribute] = key}
+          name_hash[name] = {
+            data[attribute] = key
+            
+          }
         end
       end
     end
