@@ -3,6 +3,9 @@ def nyc_pigeon_organizer(data)
   data.each do |attribute, values_hash|
     values_hash.each do |sub_value, names_array|
       names_array.each do |name|
+        if !name_hash[name]
+          name_hash[name] = {}
+        end
         if name_hash[name]
           name_hash[name][attribute] = data[attribute][sub_value]
         else 
